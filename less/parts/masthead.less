@@ -11,11 +11,25 @@
     margin-top: 10vh;
     height: 20vh;
     .logo-big{
-      margin-left: auto;
-      margin-right: auto;
       display: block;
       //text-align: center;
+      img{
+        max-height: 20vh;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
+  }
+
+  .logo-big-default {
+    font-family: 'Glyphicons Halflings';
+    font-size: 20vh;
+    &:before{
+      content: "\e239";
+    }
+  }
+
+  .logo-big {
   }
 
   &__title {
@@ -43,29 +57,5 @@
 
   &__button {
     margin-top: 10vh;
-  }
-}
-
-.solawi-btn--white{
-  background: transparent;
-  color: #FFFFFF;
-  border-radius: 10px;
-  border: 2px solid white;
-  padding: 10px 20px;
-  &:hover{
-    background-color: white;
-    color: black;
-    cursor: pointer;
-    text-decoration: none;
-  }
-  &:visited{
-    text-decoration: none;
-    color: white;
-  }
-  &:focus{
-    text-decoration: none;
-    outline: none;
-    background-color: white;
-    color: black;
   }
 }

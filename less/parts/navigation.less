@@ -1,14 +1,37 @@
 
 .navbar-toggle{
   display: block;
+  cursor: pointer;
 }
 
+@navbar-height: 50px;
+
 .navbar{
-  background-color: green;
-  color: white;
   border-radius: 0;
+  top: 0;
+  height: @navbar-height;
+  margin-bottom: -@navbar-height;
+  width: 100%;
+  z-index: 999;
 }
 
 .navmenu-fixed-right, .navbar-offcanvas {
   border-width: 0;
+}
+
+.offcanvas {
+  box-shadow: 0px 6px 34px 6px black;
+
+  .menu-item {
+    width: 100%;
+    cursor: pointer;
+
+  }
+  a:hover,
+  a:visited,
+  a:focus,
+  a:active {
+    text-decoration: none;
+    outline: 0;
+  }
 }
